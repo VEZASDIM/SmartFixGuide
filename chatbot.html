@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot - SmartFix Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function reply() {
+            const input = document.getElementById("userInput").value.toLowerCase();
+            let response = "🤖 Δεν κατάλαβα. Δοκίμασε π.χ. 'δεν φορτίζει'";
+            if (input.includes("φορτίζει")) response = "🔌 Έλεγξε καλώδιο, καθάρισε τη θύρα και κάνε επανεκκίνηση.";
+            else if (input.includes("ανοίγει")) response = "⚡ Φόρτισε 30 λεπτά και κράτησε πατημένο το Power.";
+            else if (input.includes("κολλάει")) response = "📱 Κλείσε εφαρμογές, κάνε restart και καθάρισε cache.";
+            document.getElementById("chatResponse").innerText = response;
+        }
+    </script>
+</head>
+<body>
+<header>
+    <h1>🤖 SmartFix Chatbot</h1>
+</header>
+<main>
+    <input type="text" id="userInput" placeholder="Πες το πρόβλημά σου..." />
+    <button onclick="reply()">Αποστολή</button>
+    <p id="chatResponse"></p>
+</main>
+</body>
+</html>
