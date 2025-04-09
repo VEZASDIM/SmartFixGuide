@@ -1,1 +1,8 @@
-{}
+{
+  "name": "smartfix",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "short_name": "SMR",
+  "id": "SMARTBYDV",
+  "description": "SMARTFIX QUIDE"
+}
