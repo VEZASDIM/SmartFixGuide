@@ -1,0 +1,16 @@
+{
+    "name": "SmartFix Guide by DV",
+    "short_name": "SmartFix",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#FFD700",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "smartfix_icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
